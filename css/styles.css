@@ -1,12 +1,332 @@
 /*
   DIAGNOSTIC STYLING
 */
-body {
+/* body {
   background: gray;
 }
 
 * {
   outline: 1px dotted black;
+} */
+
+/* PRESENTATION
+* CSS: https://cssreference.io
+* https://codepen.io/manikoth/pen/XpPMXv.css
+*/
+
+/* Doodle Stage */
+#stage {
+  height: 300px;
+  width: 600px;
+  overflow: hidden;
+  position: relative;
+}
+/*** Sign ***/
+
+.cafe-wrapper {
+  position: absolute;
+  left: 100px;
+  height: 130px;
+  width: 400px;
+  border-radius: 30px;
+  background-color: #49260a;
 }
 
-/* Your Awesome Scripts */
+.cafe-move {
+  animation: fadeOutUp 1s ease-in forwards;
+}
+
+.cafe-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cafe-wrapper h1 {
+  font-family: 'Abril Fatface';
+  font-size: 100px;
+  text-transform: uppercase;
+  color:  #caad8c;
+  animation: fadeIn 2s ease-in-out alternate;
+}
+
+/**** Sign Kerning ****/
+.char1 {
+  margin-right: .1em;
+}
+
+.char2 {
+  margin-right: .15em;
+}
+
+.char3 {
+  margin-right: .1em;
+}
+
+.char4 {
+  margin-right: .1em;
+}
+
+
+
+/**** Coffee Pot ****/
+#pot {
+  position: absolute;
+  stroke: black;
+  stroke-width: 3px;
+  width: 130px;
+  left: -120px;
+}
+
+.pot-wave {
+  top: 100px;
+  fill: white;
+  stroke: none;
+  animation: pot-wave .8s ease-in-out infinite;
+}
+
+.belly {
+  fill: none;
+}
+
+.pour {
+ animation: pour 10s ease-in-out;
+}
+
+.wave-pour {
+  animation: wave-pour 1s ease-in-out .5s 6;
+
+}
+
+/**** Mugs ****/
+.mug-wrapper {
+  flex-direction: row;
+  justify-content: space-around;
+  display: none;
+  position: absolute;
+  top: -5x;
+}
+
+.mug-slide {
+    display: flex;
+    animation: fadeInRightBig 2s;
+}
+
+#mug1, #mug2, #mug3, #mug4, #mug5, #mug6 {
+  position: relative;
+  width: 100px;
+}
+
+.mug {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 175px;
+  color: white;
+  font-size: 26px;
+}
+
+.coffee {
+  height: 100px;
+  fill: #3a2301;
+}
+
+.outside, .handle {
+  fill: none;
+  stroke-width: 3px;
+}
+
+.handle {
+  left: 4px;
+}
+
+/**** GOOGLE LETERS *******/
+
+h1.mug {
+  font-family: 'Josefin Sans', sans-serif;
+  top: 190px;
+  left: 30px;
+}
+
+/**** Wave *******/
+
+.wave {
+  width: 70px;
+  fill: white;
+  position: absolute;
+  left: 0px;
+  animation:  coffee-wave .8s ease-in infinite;
+}
+
+.move-back {
+    animation: move-back 2s ease-in-out 1 forwards;
+}
+
+.move {
+  animation: move 2s ease-in-out 1 forwards;
+}
+
+#mug1 .move {
+  animation-delay: .5s;
+}
+
+#mug2 .move {
+  animation-delay: 1.5s;
+}
+
+#mug3 .move {
+  animation-delay: 2.5s;
+}
+
+#mug4 .move {
+  animation-delay: 3.4s;
+}
+
+#mug5 .move {
+  animation-delay: 4.5s;
+}
+
+#mug6 .move {
+  animation-delay: 5.6s;
+}
+
+/** mug styles **/
+
+#mug1 .handle, #mug1 .outside {
+    stroke: rgb(66, 133, 244);
+}
+
+#mug2 .handle, #mug2 .outside {
+    stroke: #ea4335;
+}
+
+#mug3 .handle, #mug3 .outside {
+    stroke: #f9ab00;
+}
+
+#mug4 .handle, #mug4 .outside {
+    stroke: rgb(66, 133, 244);
+}
+
+#mug5 .handle, #mug5 .outside {
+    stroke: #34a853;
+}
+
+#mug6 .handle, #mug6 .outside {
+    stroke: #ea4335;
+}
+
+/*** button styles ***/
+#pour-button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: #f6eddd;
+  width: 120px;
+  position: absolute;
+  top: 255px;
+  left: 235px;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #283148;
+  padding: .6em .5em .5em .5em;
+}
+
+/*** Custom Animations ***/
+
+@keyframes pour {
+ 0% {
+		transform: translateX(0);
+	}
+10% {
+		transform: translateX(30px) rotate(80deg);
+	}
+15% {
+		transform: translateX(30px) rotate(20deg);
+	}
+20% {
+    transform: translateX(120px) rotate(80deg);
+  }
+25% {
+    transform: translateX(120px) rotate(20deg);
+  }
+30% {
+		transform: translateX(220px) rotate(80deg);
+	}
+35% {
+    transform: translateX(220px) rotate(20deg);
+  }
+40% {
+    transform: translateX(320px) rotate(80deg);
+  }
+45% {
+    transform: translateX(320px) rotate(20deg);
+  }
+50% {
+    transform: translateX(420px) rotate(80deg);
+  }
+55% {
+    transform: translateX(420px) rotate(20deg);
+  }
+60% {
+    transform: translateX(530px) rotate(80deg);
+  }
+70% {
+    transform: translateX(530px) rotate(0deg);
+  }
+
+}
+
+@keyframes coffee-wave {
+	0% {
+		transform: rotate(2deg);
+	}
+	50% {
+		transform: rotate(-5deg);
+  }
+	100% {
+		transform: rotate(2deg);
+	}
+}
+
+@keyframes move {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-52px);
+	}
+}
+
+@keyframes move-back {
+	0% {
+		transform: translateY(-52px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes pot-wave {
+	0% {
+		transform: rotate(1deg);
+	}
+	50% {
+		transform: rotate(-2deg);
+  }
+	100% {
+		transform: rotate(1deg);
+	}
+}
+
+@keyframes wave-pour {
+ 0% {
+		transform: translateY(0);
+	}
+50% {
+		transform: translateY(50px) translateX(-30px) rotate(-30deg);
+	}
+100% {
+		transform: rotate(0deg);
+	}
+}
+

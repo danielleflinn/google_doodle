@@ -3,7 +3,7 @@
 <head>
 
 <!-- Page Title -->
-    <title>Google Doodle - Cofee </title>
+    <title>Google Doodle - Coffee </title>
 
 <!-- Metadata -->
     <meta charset="UTF-8">
@@ -33,7 +33,155 @@
 </head>
 
 <body>
+    <!-- CONTENT
+* HTML: https://htmlreference.io/
+* Emmet : http://emmet.io
+* Markdown: https://guides.github.com/features/mastering-markdown/
+
+* https://codepen.io/manikoth/pen/evpozv.html
+
+-->
+
+<!-- Container -->
+<main>
+
+    <!-- Doodle Stage -->
+    <div id="stage">
+        <!-- Elements -->
+  
+        <div class="cafe-wrapper" >
+            <h1 class="cafe">Café</h1>
+        </div>
+
+        <svg version="1.1" id="pot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+        
+            <path class="coffee" d="M66,83.9H41.5c-10.8,0-19.6-7.4-19.6-16.5c0,0,2.4-37.1,19.6-37.1H66c18.2,0.5,19.6,37.1,19.6,37.1
+            C85.6,76.5,76.8,83.9,66,83.9z"/>
+            
+            <ellipse class="pot-wave" cx="55" cy="30" rx="38.25" ry="13"/>
+            
+            <path class="belly" d="M66,83.9H41.5c-10.8,0-19.6-7.4-19.6-16.5c0,0,2.4-37.1,19.6-37.1H66c18.2,0.5,19.6,37.1,19.6,37.1
+            C85.6,76.5,76.8,83.9,66,83.9z"/>
+            
+            <path class="top" d="M74.3,32.1H33.2c-1,0-1.7-0.8-1.7-1.7v-4.1c0-1,0.8-1.7,1.7-1.7h41.1c1,0,1.7,0.8,1.7,1.7v4.1C76,31.3,75.3,32.1,74.3,32.1z
+            "/>
+            <path class="handle" d="M4.8,61.3c-3.4,1.5,5.6-19,8.4-25c1.9-4,4.5-7.4,8.3-8.6c3-1,9.5-0.8,15.9,4l-5.6,4.3c-3.6-2.6-5.6-4.1-8.5-2.9
+            c-1.8,0.7-4.7,4.1-5.9,6.7C14.5,45.9,9.6,59.2,4.8,61.3z"/>
+            
+            <path class="top" d="M35,27.8l-0.4-6.5c-0.1-1.4,1.1-2.5,2.4-2.2c7.7,1.4,30.9,2.4,43.7-5.3c0,0-2.6,13.8-20.3,16.4S35,27.8,35,27.8z"/>
+            
+        </svg>
     
+    
+        <div class="mug-wrapper">
+            <div id="mug1">
+                <svg version="1.1" class="mug coffee" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <rect class="inside" width="30" rx="10" height="30"/>
+                </svg>
+                <svg class="mug wave-container" viewBox="-5 -5 50 50">
+                    <ellipse class ="wave" cx="15.5" cy="10" rx="50" ry="25"/>
+                </svg>
+                <h1 class="mug">G</h1>
+                <svg version="1.1" class="mug outside" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <path d="M20.7,29.8H9.6c-5,0-9.1-4.1-9.1-9.1V4.9c0-2.4,2-4.4,4.4-4.4h20.5c2.4,0,4.4,2,4.4,4.4v15.8C29.8,25.7,25.7,29.8,20.7,29.8z"/>
+                </svg>
+                <svg version="1.1" class="mug handle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <path  d="M38.4,13.4v0.7c0,2.8-2.3,5.1-5.1,5.1H29V8.3h4.3C36.1,8.3,38.4,10.6,38.4,13.4z"/>
+                </svg>
+            </div>
+            
+            <div id="mug2">
+                <svg version="1.1" class="mug coffee" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <rect class="inside" width="30" rx="10" height="30"/>
+                </svg> 
+                <svg class="mug wave-container" viewBox="-5 -5 50 50">
+                    <ellipse class ="wave"cx="15.5" cy="10" rx="50" ry="25"/>
+                </svg>
+                <h1 class="mug">O</h1>
+                <svg version="1.1" class="mug" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <path class="outside" d="M20.7,29.8H9.6c-5,0-9.1-4.1-9.1-9.1V4.9c0-2.4,2-4.4,4.4-4.4h20.5c2.4,0,4.4,2,4.4,4.4v15.8C29.8,25.7,25.7,29.8,20.7,29.8z"/>
+                </svg>
+                    <svg version="1.1" class="mug handle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                <path  d="M38.4,13.4v0.7c0,2.8-2.3,5.1-5.1,5.1H29V8.3h4.3C36.1,8.3,38.4,10.6,38.4,13.4z"/>
+                </svg>
+            </div>
+            
+            <div id="mug3">
+                <svg version="1.1" class="mug coffee" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <rect class="inside" width="30" rx="10" height="30"/>
+                </svg>
+                <svg class="mug wave-container" viewBox="-5 -5 50 50">
+                    <ellipse class ="wave"cx="15.5" cy="10" rx="50" ry="25"/>
+                </svg>
+                <h1 class="mug">O</h1>
+                <svg version="1.1" class="mug" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <path class="outside" d="M20.7,29.8H9.6c-5,0-9.1-4.1-9.1-9.1V4.9c0-2.4,2-4.4,4.4-4.4h20.5c2.4,0,4.4,2,4.4,4.4v15.8C29.8,25.7,25.7,29.8,20.7,29.8z"/>
+                </svg>
+                <svg version="1.1" class="mug handle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <path  d="M38.4,13.4v0.7c0,2.8-2.3,5.1-5.1,5.1H29V8.3h4.3C36.1,8.3,38.4,10.6,38.4,13.4z"/>
+                </svg>
+            </div>
+
+            <div id="mug4">
+                <svg version="1.1" class="mug coffee" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <path class="inside" d="M21,29H9.3c-4.4,0-8-3.6-8-8V9.5c0-2.2,1.8-3.9,3.9-3.9h19.9c2.2,0,3.9,1.8,3.9,3.9V21C29,25.4,25.4,29,21,29z" />
+                </svg>
+                <svg class="mug wave-container" viewBox="-5 -5 50 50">
+                    <ellipse class ="wave"cx="15.5" cy="10" rx="50" ry="25"/>
+                </svg>
+                <h1 class="mug">G</h1>
+                <svg version="1.1" class="mug" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <path class="outside" d="M20.7,29.8H9.6c-5,0-9.1-4.1-9.1-9.1V4.9c0-2.4,2-4.4,4.4-4.4h20.5c2.4,0,4.4,2,4.4,4.4v15.8C29.8,25.7,25.7,29.8,20.7,29.8z"/>
+                </svg>
+                <svg version="1.1" class="mug handle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <path  d="M38.4,13.4v0.7c0,2.8-2.3,5.1-5.1,5.1H29V8.3h4.3C36.1,8.3,38.4,10.6,38.4,13.4z"/>
+                </svg>
+            </div>
+
+            <div id="mug5">
+                <svg version="1.1" class="mug coffee" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <rect class="inside" width="30" rx="10" height="30"/>
+                </svg>
+                <svg class="mug wave-container" viewBox="-5 -5 50 50">
+                    <ellipse class ="wave"cx="15.5" cy="10" rx="50" ry="25"/>
+                </svg>
+                <h1 class="mug">L</h1>
+                <svg version="1.1" class="mug" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <path class="outside" d="M20.7,29.8H9.6c-5,0-9.1-4.1-9.1-9.1V4.9c0-2.4,2-4.4,4.4-4.4h20.5c2.4,0,4.4,2,4.4,4.4v15.8C29.8,25.7,25.7,29.8,20.7,29.8z"/>
+                </svg>
+                <svg version="1.1" class="mug handle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <path  d="M38.4,13.4v0.7c0,2.8-2.3,5.1-5.1,5.1H29V8.3h4.3C36.1,8.3,38.4,10.6,38.4,13.4z"/>
+                </svg>
+            </div>
+            <div id="mug6">
+                <svg version="1.1" class="mug coffee" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <rect class="inside" width="30" rx="10" height="30"/>
+                </svg>
+                <svg class="mug wave-container" viewBox="-5 -5 50 50">
+                    <ellipse class ="wave"cx="15.5" cy="10" rx="50" ry="25"/>
+                </svg>
+                <h1 class="mug">E</h1>
+                <svg version="1.1" class="mug" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <path class="outside" d="M20.7,29.8H9.6c-5,0-9.1-4.1-9.1-9.1V4.9c0-2.4,2-4.4,4.4-4.4h20.5c2.4,0,4.4,2,4.4,4.4v15.8C29.8,25.7,25.7,29.8,20.7,29.8z"/>
+                </svg>
+                <svg version="1.1" class="mug handle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" width="38.9px" height="30.3px" viewBox="-5 -5 50 50">
+                    <path  d="M38.4,13.4v0.7c0,2.8-2.3,5.1-5.1,5.1H29V8.3h4.3C36.1,8.3,38.4,10.6,38.4,13.4z"/>
+                </svg>
+            </div>
+        </div>
+        
+        <button id="pour-button" title="National Coffee Day">Coffee?</button>
+
+    </div> 
+    <!--end of stage-->
+  
+    <input type="text" />
+    <div id="search">
+      <button>Google Search</button>
+      <button>I'm Feeling Lucky</button>
+    </div>
+  
+  </main>
 
     <!-- jQuery Library via CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
